@@ -1,0 +1,431 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  color: #29243b;
+  background: #f6f3ff;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.start-view {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px;
+
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      #ffdce9,
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      #dcd4ff,
+      transparent 35%
+    ),
+    #f7f4ff;
+}
+
+.welcome-card {
+  width: min(430px, 100%);
+
+  padding: 40px;
+
+  text-align: center;
+
+  background: white;
+
+  border-radius: 28px;
+
+  box-shadow:
+    0 25px 70px
+      rgba(70, 50, 120, 0.15);
+}
+
+.welcome-emoji {
+  width: 80px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+
+  background: #eee8ff;
+
+  font-size: 42px;
+}
+
+.welcome-card h1 {
+  margin: 0;
+
+  font-size: 34px;
+}
+
+.welcome-card p {
+  color: #777187;
+
+  margin: 12px 0 30px;
+}
+
+.welcome-card form {
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+}
+
+.welcome-card label {
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.welcome-card input {
+  padding: 14px 16px;
+
+  border: 2px solid #e7e1f4;
+
+  border-radius: 14px;
+
+  outline: none;
+}
+
+.welcome-card input:focus {
+  border-color: #745bc7;
+}
+
+.welcome-card button {
+  margin-top: 16px;
+
+  padding: 14px;
+
+  border: 0;
+  border-radius: 14px;
+
+  background: #7258c7;
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.welcome-card button:hover {
+  background: #5f47b0;
+}
+
+/* =========================
+   GAME
+   ========================= */
+
+.game-view {
+  min-height: 100vh;
+
+  padding: 30px 20px;
+
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      #ffe1ed,
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 90%,
+      #ddd5ff,
+      transparent 35%
+    ),
+    #f7f5ff;
+}
+
+.game-card {
+  width: min(760px, 100%);
+
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  background: white;
+
+  border-radius: 30px;
+
+  box-shadow:
+    0 25px 80px
+      rgba(65, 45, 110, 0.15);
+}
+
+
+.game-header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 28px 32px;
+
+  border-bottom: 1px solid #eeeaf5;
+}
+
+.label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #9991aa;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+.pet-name {
+  margin: 0;
+
+  font-size: 30px;
+
+  color: #29243b;
+}
+
+.mood {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f0ebff;
+
+  font-size: 30px;
+}
+
+
+.pet-display {
+  padding: 35px 20px 20px;
+
+  text-align: center;
+}
+
+.pet-image {
+  width: 150px;
+  height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      145deg,
+      #f0e9ff,
+      #e3d9ff
+    );
+
+  box-shadow:
+    0 15px 35px
+      rgba(90, 65, 150, 0.12);
+
+  font-size: 80px;
+}
+
+.mood-text {
+  margin: 20px 0 0;
+
+  color: #777187;
+}
+
+
+.stats {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 14px;
+
+  padding: 20px 32px;
+}
+
+.stat {
+  padding: 16px;
+
+  border: 1px solid #eeeaf5;
+
+  border-radius: 17px;
+
+  background: #fbfaff;
+}
+
+.stat-label {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.stat-value {
+  color: #634db1;
+
+  font-weight: 900;
+}
+
+.bar {
+  height: 7px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background: #e8e4ef;
+}
+
+.bar-fill {
+  height: 100%;
+
+  border-radius: 20px;
+
+  transition: width 0.2s ease;
+}
+
+.bar-fill.hunger {
+  background: #ff8a65;
+}
+
+.bar-fill.energy {
+  background: #7060d5;
+}
+
+.bar-fill.happiness {
+  background: #ed70aa;
+}
+
+/* Actions */
+
+.actions {
+  padding: 15px 32px 35px;
+}
+
+.actions h2 {
+  margin: 0 0 16px;
+
+  font-size: 17px;
+}
+
+.action-buttons {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 12px;
+}
+
+.action-buttons button {
+  min-height: 100px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  border: 1px solid #e7e1f3;
+
+  border-radius: 18px;
+
+  background: white;
+
+  color: #302b42;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    border-color 0.2s;
+}
+
+.action-buttons button span {
+  font-size: 28px;
+}
+
+.action-buttons button:hover {
+  transform: translateY(-3px);
+
+  border-color: #b9a9e9;
+
+  box-shadow:
+    0 10px 25px
+      rgba(75, 55, 130, 0.1);
+}
+
+.action-buttons button:active {
+  transform: translateY(0);
+}
+
+
+@media (max-width: 650px) {
+  .welcome-card {
+    padding: 30px 22px;
+  }
+
+  .game-header {
+    padding: 22px;
+  }
+
+  .pet-name {
+    font-size: 25px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+
+    padding: 20px 22px;
+  }
+
+  .actions {
+    padding: 15px 22px 28px;
+  }
+
+  .action-buttons {
+    grid-template-columns: 1fr;
+  }
+}

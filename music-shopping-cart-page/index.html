@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Shopping Cart Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 p-6">
+
+    <!-- 1. #shopping-cart-container: flex, flex-col, lg:flex-row -->
+    <div id="shopping-cart-container" class="flex flex-col lg:flex-row gap-6 max-w-6xl mx-auto">
+      
+      <!-- 2. #products-container -->
+      <div id="products-container" class="flex-1 flex flex-col gap-4">
+        
+        <!-- .card 1 -->
+        <div class="card bg-white p-4 rounded-lg border border-gray-200 shadow-sm flex items-center justify-between">
+          <div>
+            <h2 class="text-xl font-bold">Wireless Headphones</h2>
+            <p class="quantity text-gray-600">Quantity: 1</p>
+            <p class="price font-semibold text-gray-800">$199.99</p>
+          </div>
+          <button class="remove-button bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded">Remove</button>
+        </div>
+
+        <!-- .card 2 -->
+        <div class="card bg-white p-4 rounded-lg border border-gray-200 shadow-sm flex items-center justify-between">
+          <div>
+            <h2 class="text-lg font-bold">Vinyl Record Album</h2>
+            <p class="quantity text-gray-600">Quantity: 2</p>
+            <p class="price font-semibold text-gray-800">$35.00</p>
+          </div>
+          <button class="remove-button bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded">Remove</button>
+        </div>
+
+      </div>
+
+      <!-- 3. #order-summary-container: rounded-lg, border (全辺ボーダー) -->
+      <div id="order-summary-container" class="w-full lg:w-80 p-6 bg-white rounded-lg border border-gray-300 shadow-sm flex flex-col gap-4 h-fit">
+        <h2 class="text-2xl font-bold border-b pb-2">Order Summary</h2>
+        
+        <div class="flex justify-between items-center">
+          <span id="total" class="font-bold text-xl">Total:</span>
+          <span id="total-amount" class="text-xl font-bold text-gray-900">$269.99</span>
+        </div>
+
+        <!-- Checkout link: text-center, bg-blue-*, hover:bg-blue-* -->
+        <a href="#" class="block text-center bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-md font-semibold transition-colors">Checkout</a>
+      </div>
+
+    </div>
+
+  </body>
+</html>

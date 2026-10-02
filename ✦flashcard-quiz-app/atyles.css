@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f5;
+  color: #18181b;
+}
+
+.app {
+  width: min(90%, 640px);
+  margin: 40px auto;
+}
+
+.flashcard {
+  min-height: 180px;
+  padding: 24px;
+  margin-bottom: 16px;
+  border: 2px solid #27272a;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+}
+
+.flashcard .back {
+  display: none;
+}
+
+.flashcard.flipped .front {
+  display: none;
+}
+
+.flashcard.flipped .back {
+  display: block;
+}
+
+button,
+textarea {
+  font: inherit;
+}
+
+button {
+  margin: 8px 0;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+form {
+  display: grid;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+textarea {
+  min-height: 80px;
+  padding: 10px;
+}

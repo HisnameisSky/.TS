@@ -1,0 +1,13 @@
+{
+  "name": "PELE",
+  "overall_rating": 98,
+  "position": "CAM",
+  "club": "Santos FC",
+  "image_url": "https://cdn.freecodecamp.org/curriculum/typescript/tsx-workshop/pele.jpg",
+  "pac": 97,
+  "sho": 98,
+  "pas": 83,
+  "dri": 99,
+  "def_": 41,
+  "phy": 75
+}
